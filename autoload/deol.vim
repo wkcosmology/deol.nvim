@@ -453,17 +453,17 @@ endfunction
 
 function! s:user_options() abort
   return {
-        \ 'command': &shell,
-        \ 'edit': v:false,
-        \ 'edit_filetype': '',
-        \ 'cwd': '',
-        \ 'split': '',
-        \ 'start_insert': v:true,
-        \ 'wincol': &columns / 4,
-        \ 'winheight': 30,
-        \ 'winrow': &lines / 3,
-        \ 'winwidth': 90,
-        \ }
+  \ 'command': &shell,
+  \ 'edit': v:false,
+  \ 'edit_filetype': '',
+  \ 'cwd': '',
+  \ 'split': '',
+  \ 'start_insert': v:true,
+  \ 'wincol': &columns / 2,
+  \ 'winheight': &lines,
+  \ 'winrow': &lines / 3,
+  \ 'winwidth': &columns / 2,
+  \ }
 endfunction
 
 function! s:parse_options(cmdline) abort
